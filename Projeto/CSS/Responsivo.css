@@ -10,11 +10,12 @@
     }
     
     .hero-site .txt-hero h1 {
-        font-size: 2em;
+        font-size: 2.2em;
     }
 
     .hero-site .txt-hero p {
         font-size: .9rem;
+        font-weight: 400;
     }
     
     .hero-site button:hover {
@@ -30,6 +31,7 @@
 
 .vantagens .itens-container .img-itens img{
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .vantagens .itens-container .txt-itens p{
@@ -62,7 +64,7 @@
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 16px;
+    gap: 30px;
 }
 
 .popular_card{
@@ -84,28 +86,45 @@
 .popular_card_header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1rem;
     margin-bottom: 0.8rem;
 }
 
 .popular_card_header h3{
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-weight: 600;
-    color: rgb(7, 7, 7);
+    color: rgb(10, 10, 10);
 }
 
 .popular_card_header h4{
-    font-size: .8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: rgb(252, 31, 31);
 }
 
 .popular_content p{
-    color: rgb(19, 19, 19);
-    display: flex;
-    align-items: center;
-    justify-content: left;
+    display: none;
 }
 
+.hotel{
+    width: 100%;
+    height: 50h;
+}
+
+.contato .icons-contato button:hover{
+    background-color: transparent;
+    color:black;
+}
+}
+
+
+@media screen and (min-width: 780px){
+    .btn-menu-mob{
+        display: none;
+    }
+
+    .vantagens .itens-container .img-itens img{
+        margin-top: 50px;
+    }
 }

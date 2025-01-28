@@ -74,6 +74,74 @@ header .btn-contato button:hover {
     color: rgb(10, 10, 10);
 }
 
+/* Hamburger Menu */
+.btn-menu-mob{
+    
+    position: relative;
+    z-index: 9999999;
+}
+
+.btn-menu-mob div{
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+    transition: .4s;
+}
+
+.btn-menu-mob .line-menu-mob-1{
+    width: 30px;
+}
+
+.btn-menu-mob .line-menu-mob-2{
+    width: 30px;
+}
+
+.btn-menu-mob .line-menu-mob-1.ativo1{
+    transform: rotate(45deg) translate(31%);
+}
+
+.btn-menu-mob .line-menu-mob-2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+}
+
+/* Menu Mobile */
+.menu-mobile{
+    width: 0;
+    height: 0;
+    background-color: rgba(12, 12, 12, 0.934);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.menu-mobile nav ul{
+    list-style-type: none;
+}
+
+.menu-mobile nav a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+    display: block;
+}
+
+.menu-mobile.abrir{
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow{
+    overflow: hidden;
+}
+
+
 /* Hero */
 section.hero-site {
     height: 100vh;
@@ -340,7 +408,7 @@ section.vantagens {
 
 footer{
    text-align: center;
-   margin-top: 100px;
+   font-size: 0;
 }
 
 footer .top-footer button{
@@ -352,7 +420,6 @@ footer .top-footer button{
     background-color: transparent;
     font-size: 1.5rem;
     cursor: pointer;
-    text-decoration: none;
     margin: 0 10px;
     margin-bottom: 5px;
 }
