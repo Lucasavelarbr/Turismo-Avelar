@@ -1,0 +1,448 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height:70px;
+    padding: 15px;
+    background-color: rgba(12, 12, 12, 0.708);
+    position: fixed;
+    -webkit-backdrop-filter: blur(100%);
+    backdrop-filter: blur(3px);
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{
+    max-width: 35px;
+}
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+header .menu-desktop nav ul li a {
+    color: rgb(247, 243, 243);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    transition: 0.2s;
+}
+
+header .menu-desktop nav ul li a:hover {
+    transform: scale(1.20);
+}
+
+header .btn-contato button{
+    width: 100px;
+    height: 30px;
+    font-size: .8rem;
+    background-color: transparent;
+    color: #f9f8f8;
+    border: 1px solid #fbfafa;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+header .btn-contato button:hover {
+    background-color: #fffdfd;
+    color: rgb(10, 10, 10);
+}
+
+/* Hamburger Menu */
+.btn-menu-mob{
+    
+    position: relative;
+    z-index: 9999999;
+}
+
+.btn-menu-mob div{
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+    transition: .4s;
+}
+
+.btn-menu-mob .line-menu-mob-1{
+    width: 30px;
+}
+
+.btn-menu-mob .line-menu-mob-2{
+    width: 30px;
+}
+
+.btn-menu-mob .line-menu-mob-1.ativo1{
+    transform: rotate(45deg) translate(31%);
+}
+
+.btn-menu-mob .line-menu-mob-2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+}
+
+/* Menu Mobile */
+.menu-mobile{
+    width: 0;
+    height: 0;
+    background-color: rgba(12, 12, 12, 0.934);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.menu-mobile nav ul{
+    list-style-type: none;
+}
+
+.menu-mobile nav a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+    display: block;
+}
+
+.menu-mobile.abrir{
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow{
+    overflow: hidden;
+}
+
+
+/* Hero */
+section.hero-site {
+    height: 100vh;
+    background-image: url(../IMG/paisagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #f9f7f7fb;
+}
+
+section.hero-site .overplay{
+    opacity:inherit;
+}
+
+.hero-site .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 2em;
+    line-height: 30px;
+    font-weight:200;
+}
+
+.hero-site .txt-hero h1 span {
+    display: block;
+    font-weight: bold;
+} 
+
+.hero-site .txt-hero p {
+    font-size: .8rem;
+    font-weight: 300;
+    margin: 100px 0, ;
+    padding: 10px 0;
+}
+
+.hero-site .txt-hero p span {
+    display: block;
+}
+
+.hero-site button {
+    width: 190px;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fffdfd;
+    border: 1px solid #fbf9f9;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero-site button:hover {
+    background-color: rgb(248, 246, 246);
+    color: #0a0a0a
+}
+
+/* Vantagens */
+section.vantagens {
+    padding: 40px 0;
+}
+
+.vantagens .itens-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+    margin-bottom: 45px;
+}
+
+.vantagens .itens-container .img-itens img{
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 15px 10px 10px  black
+}
+
+.vantagens .itens-container .img-itens img:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.vantagens .itens-container .txt-itens h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 200;
+}
+
+.vantagens .itens-container .txt-itens h3 span{
+    font-weight: 600;
+}
+
+.vantagens .itens-container .txt-itens p{
+    font-size: 1.2rem;
+}
+
+
+/* Popular Destinations */
+.popular_container h2{
+    font-size: 2.5rem;
+    margin-top: 80px;
+    text-align: center;
+}
+.popular_grid{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.popular_card{
+    overflow: hidden;
+    border-radius: 1rem;
+    height: auto;
+    box-shadow: 15px 10px 10px black;
+}
+
+.popular_card:hover{
+    transform: scale(1.10);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.popular_content{
+    padding: 10px;
+}
+
+.popular_card_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.popular_card_header h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(7, 7, 7);
+}
+
+.popular_card_header h4{
+    font-size: .8rem;
+    font-weight: 600;
+    color: rgb(252, 31, 31);
+}
+
+.popular_content p{
+    color: rgb(19, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+/* Estilo da seção hotéis */
+.hoteis{
+    height: 300px;
+    background-image: url(../IMG/piscinas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgba(0,0,0,0.8);
+    background-blend-mode: color;
+    color: #fffdfd;
+}
+
+.hoteis-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.hoteis h3 {
+    font-size: 1.7rem;
+    line-height: 35px;
+    font-weight: 100;
+}
+
+.hoteis h3 span{
+    display: block;
+    font-weight: 600;
+}
+
+.hoteis p{
+    margin: 20px;
+    font-size: 0.9rem;
+}
+
+.hoteis button{
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.hoteis button:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+/* Contatos */
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+    margin-top: 100px;
+}
+
+.contato .txt-contato h3{
+    font-size: 2rem;
+    line-height: 50px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 600;
+}
+
+.contato .txt-contato p{
+    font-size: 1rem;
+}
+
+.contato .icons-contato a{
+    text-decoration: none;
+}
+
+.contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px;
+    padding: 0 50px;
+    width: 30px;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    transition: .3s;
+}
+
+.contato .icons-contato button i{
+    font-size: 2rem;
+    align-items: center;
+}
+
+.contato .icons-contato button:hover{
+    background-color: black;
+    color: white
+}
+
+
+footer{
+   text-align: center;
+   font-size: 0;
+}
+
+footer .top-footer button{
+    display: inline;
+    width: 50px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 10px;
+    margin-bottom: 5px;
+}
+
+.medle-footer{
+    margin: 10px 0;
+    border-top: 1px solid black;
+    padding: 20px;
+}
+
+.medle-footer a{
+   
+    text-decoration: none;
+    margin: 20px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.bottom-footer p{ 
+    font-size: .6rem;
+    margin-top: 5px;
+    padding: 10px;
+}
+
