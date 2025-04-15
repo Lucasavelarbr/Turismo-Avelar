@@ -1,2 +1,1 @@
-# Turismo-Avelar
-Site de Turismo feito a partir de um trabalho de conclusão de Semestre na faculdade
+Seu site está no ar em https://lucasavelarbr.github.io/Turismo-Avelar/
